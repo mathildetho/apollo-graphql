@@ -17,7 +17,7 @@ const LAUNCHES = gql`
   }
 `;
 
-const ExchangeRates = () => {
+const Launches = () => {
     const { loading, error, data } = useQuery(LAUNCHES);
     if(loading) return <p>Loading...</p>
     if(error) return <p>Error</p>
@@ -50,4 +50,4 @@ const ExchangeRates = () => {
     )
 }
 
-export default ExchangeRates;
+export default Launches;
